@@ -27,6 +27,7 @@ let punt1=false;
 let numero="";
 let numero1="";
 let global="";
+let contg=0;
 
 cero.addEventListener("click",()=>{
     numero+="0";
@@ -89,7 +90,14 @@ suma.addEventListener("click",()=>{
         global=Number(numero1)/ Number(numero);
         div1=false;
     }
-    numero1=global;
+    if (contg===0) {
+        numero1=numero;
+        console.log(numero1);
+        contg++;
+    }else{
+        numero1=global;
+        console.log(numero1);
+    }
     numero="";
     suma1=true;
 })
@@ -114,7 +122,16 @@ resta.addEventListener("click",()=>{
         global=Number(numero1)/ Number(numero);
         div1=false;
     }
-    numero1=global;
+    if (contg===0) {
+        numero1=numero;
+        console.log(numero1);
+        console.log('primero');
+        contg++;
+    }else{
+        numero1=global;
+        console.log('goblal');
+        console.log(numero1);
+    }
     numero="";
     resta1=true;
 })
@@ -140,11 +157,14 @@ mult.addEventListener("click",()=>{
         global=Number(numero1)/ Number(numero);
         div1=false;
     }
-    if (x==0) {
-        numero1=numero
-        x++;
+    if (contg===0) {
+        numero1=numero;
+        console.log(numero1);
+        contg++;
+    }else{
+        numero1=global;
+        console.log(numero1);
     }
-    numero1=global;
     numero="";
     mult1=true;
 })
@@ -170,7 +190,14 @@ div.addEventListener("click",()=>{
         global=Number(numero1)/ Number(numero);
         div1=false;
     }
-    numero1=global;
+    if (contg===0) {
+        numero1=numero;
+        console.log(numero1);
+        contg++;
+    }else{
+        numero1=global;
+        console.log(numero1);
+    }
     numero="";
     div1=true;
 })
@@ -178,7 +205,8 @@ ac.addEventListener("click",()=>{
     numero="";
     nb.value=Number(numero);
     punt1=false;
-    global="";
+    global="";numero1=""
+    contg=0
 })
 punto.addEventListener("click",()=>{
     numero+=".";
