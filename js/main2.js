@@ -100,6 +100,7 @@ suma.addEventListener("click",()=>{
     }
     numero="";
     suma1=true;
+    punt1=false;
 })
 resta.addEventListener("click",()=>{
     if (suma1) {
@@ -134,6 +135,7 @@ resta.addEventListener("click",()=>{
     }
     numero="";
     resta1=true;
+    punt1=false;
 })
 let x =0;
 mult.addEventListener("click",()=>{
@@ -167,6 +169,7 @@ mult.addEventListener("click",()=>{
     }
     numero="";
     mult1=true;
+    punt1=false;
 })
 div.addEventListener("click",()=>{
     if (suma1) {
@@ -200,6 +203,7 @@ div.addEventListener("click",()=>{
     }
     numero="";
     div1=true;
+    punt1=false;
 })
 ac.addEventListener("click",()=>{
     numero="";
